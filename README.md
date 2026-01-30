@@ -1,3 +1,3 @@
-2026 is coming back
+school is coming back
 
 oh no
