@@ -1,28 +1,14 @@
-from flask import Flask, render_template, request
+"""
+Basic Flask website with Buttons that edit an Element
+16.03.2026
+L2DTSD
+"""
 
-app = Flask(__name__)
-
-WEBSITE_NAME = "a"
-
-
-@app.route(
-    "/",
-)
-def main():
-    return render_template("index.html", status="waiting")
-
-
-@app.route("/", methods=["POST"])
-def button1():
-    status = "waiting"
-    if request.method == "POST":
-        if "button1" in request.form:
-            status = "clicked"
-        elif "button2" in request.form:
-            status = "waiting(reset)"
-
-    return render_template("index.html", status=status)
+from imports import *
+from lib.main import main
+from lib.button1 import button1
 
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
+    main()  # renders the website
