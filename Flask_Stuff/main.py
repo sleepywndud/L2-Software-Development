@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-WEBSITE_NAME = "Babo Bobo's Pizzaria"
+WEBSITE_NAME = "a"
 
 
 @app.route(
