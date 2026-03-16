@@ -1,54 +1,15 @@
-<!-- wndx2.github.io -->
-
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>¡wndud!</title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-		<script src="script.js"></script>
+		<meta charset="UTF-8" />
+		<title>Babo Bobo's Pizzaria</title>
 	</head>
 	<body>
-		<div class="p-center">
-			<h1 style="font-size: 50px">
-				<script>
-					const today = new Date();
-					const day = String(today.getDate()).padStart(2, "0");
-					const month = String(today.getMonth() + 1).padStart(2, "0");
-					const year = today.getFullYear();
-					document.write(`${day}.${month}.${year}`); // returns as html
-				</script>
-			</h1>
-			<p id="live-time"></p>
-		</div>
-		<main>
-			<p>I'm <span id="name" style="display: inline-block"></span></p>
-			<p>This page is used by me to quickly access shortcuts.</p>
-			<p>For example, press the key 'C'; it will open Google Classroom.</p>
+		<p>Status: {{ status }}</p>
 
-			<div class="divider"></div>
-
-			<p>MBTI: ISTP</p>
-			<p>B-Day: 8th of November, 2009</p>
-			<p>Email: 22222w@duck.com</p>
-
-			<div class="divider"></div>
-
-			<div class="socials">
-				<a href="https://github.com/wndx2" target="_blank" class="socials">
-					<img src="assets/images/github-icon.png" alt="github icon" width="40px" />
-				</a>
-				<a href="https://github.com/sleepywndud" target="_blank" class="socials">
-					<img src="assets/images/github-icon.png" alt="github icon" width="40px" />
-				</a>
-				<a
-					href="https://discord.com/users/1199191185378508942"
-					target="_blank"
-					class="socials"
-				>
-					<img src="assets/images/discord-icon.png" alt="github icon" width="40px" />
-				</a>
-			</div>
-
-			<div class="divider"></div>
-		</main>
+		<form action="/" method="POST">
+			<button name="button1" type="submit" value="button1">Button 1</button>
+			<button name="button2" type="submit" value="button2">reset</button>
+		</form>
 	</body>
 </html>
