@@ -11,4 +11,3 @@ from lib.button1 import button1
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
-    main()  # renders the website
